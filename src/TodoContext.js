@@ -48,6 +48,7 @@ export const TodoProvider = ({ children }) => {
 
   // Memoize the context value
   const contextValue = useMemo(() => ({ state, dispatch }), [state, dispatch]);
+  console.log('TodoProvider => contextValue => ', contextValue);
 
   // Save todos to localStorage whenever they change
   useEffect(() => {

@@ -60,7 +60,7 @@ const TodoApp = () => {
             bg={todo.completed ? 'green.100' : 'white'}
           >
             <Text
-              as={todo.completed ? 's' : undefined}
+              as={todo.completed ? 's' : undefined} // Strikethrough if completed
               cursor="pointer"
               onClick={() =>
                 dispatch({ type: 'TOGGLE_TODO', payload: todo.id })
